@@ -4,6 +4,11 @@ export interface Hive {
     status: string,
     species: string,
     beeyard_id: number,
-    beekeeper_first_name: string,
-    beekeeper_lastname: string,
+    beekeeper_id?: number,
+}
+
+export interface HivesResponse {
+    results: Hive[] | any;
+    next: string | null;
+    previous: string | null;
 }
