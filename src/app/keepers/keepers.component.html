@@ -1,0 +1,8 @@
+<h2>Contact a Local Keeper!</h2>
+<ul>
+    @for(keeper of keepers; track keeper.id){
+    <li><span class="name">{{keeper.first_name}} {{keeper.last_name}}</span>
+        <span class="email">{{keeper.email}}</span>
+    </li>
+    }
+</ul>
