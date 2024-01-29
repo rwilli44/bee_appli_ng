@@ -14,9 +14,13 @@ export class KeepersComponent {
   keepers: Keeper[] = [];
 
   ngOnInit(): void {
+    this.loadKeepers();
+  }
+  loadKeepers() {
     this.keeperService.getKeepers().subscribe(keepers => {
       this.keepers = keepers
     });
 
   }
 }
+
