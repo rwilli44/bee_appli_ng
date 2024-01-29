@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GetKeepersService } from '../get-keepers.service';
+import { GetKeepersService } from '../services/get-keepers.service';
 import { Keeper } from '../keeper-interface';
 
 @Component({

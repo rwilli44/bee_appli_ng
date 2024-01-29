@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { catchError, map, } from 'rxjs/operators';
 import {
   Keeper
-} from './keeper-interface';
+} from '../keeper-interface';
 
 @Injectable({
   providedIn: 'root'
