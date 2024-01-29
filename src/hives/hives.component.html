@@ -1,1 +1,23 @@
-<p>hives works!</p>
+<h2> ⬢⬡⬢⬡ Search and Browse Local Beehive ⬢⬡⬢⬡ </h2>
+<ul>
+    @for(hive of hives; track hive.id){
+    <li>
+        <span class="hive_name">Hive {{hive.name}} in Beeyard {{hive.beeyard_id}} </span>
+        @if(hive.beekeeper_id){
+        <!-- IMPROVE TO HAVE IT GO DIRECTLY TO JUST THE CORRRECT KEEPER USING THE ID -->
+        <span class="hive_details"> <a routerLink="/keepers">Contact the Beekeper</a> </span>
+        }
+        @else{
+        <span class="hive_details"> Beekeeper Not Publicly Available</span>
+        }
+        <span class="hive_details"> Status: {{hive.status}} </span>
+        <span class="hive_details"> Species: {{hive.species}} </span>
+    </li>
+    }
+</ul>
+@if (previousUrl) {
+<button (click)="loadPreviousPage()"> Previous page</button>
+}
+@if (nextUrl) {
+<button (click)="loadNextPage()"> Next page</button>
+}

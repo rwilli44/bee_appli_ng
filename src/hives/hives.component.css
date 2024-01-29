@@ -1,0 +1,12 @@
+.hive_name {
+    font-weight: bold;
+    display: block;
+}
+
+.hive_details {
+    display: block;
+}
+
+li {
+    padding: .5em;
+}
