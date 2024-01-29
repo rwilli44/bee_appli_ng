@@ -25,7 +25,7 @@ export class GetKeepersService {
           email: beekeeperInfo.public_beekeeper_info_details.email,
         }))
       }),
-      catchError(this.handleError<Keeper[]>('updateHero', [])
+      catchError(this.handleError<Keeper[]>('getKeepers', [])
       )
     );
   }
